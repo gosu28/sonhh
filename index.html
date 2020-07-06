@@ -1,198 +1,225 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Gosu28</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/bootstrap3.css" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<link rel="shortcut icon" type="image/jpg" href="./images/icon.jpg">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-	<meta name="google-site-verification" content="PrTGzoNqYSwMFu-7O-OG3i5wHBNDv1wcPgAQbQgB-2A" />
-</head>
-<body style="padding-top: 0;"> 
-	<header>
-		<div class="below_body" onload="refrClock()">
-			<div class="container">
-				<div id="social">
-					<a href="https://www.facebook.com/gosu28"><i class="fab fa-facebook"></i></a> 
-					<a href="https://twitter.com/Gosu_28"><i class="fab fa-twitter"></i></a> 
-					<a href="https://www.instagram.com/gosu28_/"><i class="fab fa-instagram"></i></a>
-					<a href="https://github.com/gosu28"><i class="fab fa-github"></i></a>
-				</div>
-				<div id="clock"></div>
-			</div>
+<title>My Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="shortcut icon" type="image/jpg" href="./images/icon.jpg">
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+	<!-- Sidebar/menu -->
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:400px;" id="mySidebar">
+		<br>
+		<div class="w3-container">
+			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+				<i class="fa fa-remove" style="font-size: 50px;"></i>
+			</a>
+			<img src="images/avatar.jpg" style="width:50%;" class="w3-round"><br><br>
+			<h4><b>PORTFOLIO</b></h4>
+			<p class="w3-text-grey">Template by gosu28</p>
 		</div>
-	</header>
-	<div class="sea">
-		<div class="circle-wrapper">
-			<div class="bubble"></div>
-			<div class="submarine-wrapper">
-				<div class="submarine-body">
-					<div class="window"></div>
-					<div class="engine"></div>
-					<div class="light"></div>
-				</div>
-				<div class="helix"></div>
-				<div class="hat">
-					<div class="leds-wrapper">
-						<div class="periscope"></div>
-						<div class="leds"></div>
+		<div class="w3-container w3-bar-block">
+			<form>
+				<div class="row line">
+					<div class="col-md-3 col-3">
+						<span class="title">Họ tên</span>
+					</div>
+					<div class="col-md-9 col-9">
+						<span>Hồ Hồng Sơn</span>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-lg-8 m-auto">
-				<div class="my-container">
-					<h1 class="text-uppercase">Introduce myself</h1>
-				</div>
-				<article>
-					<p>Hi guys, Welcome to my website</p>
-
-					<p>My name is Hong Son, my English name is Lake Pink Mountain :). However, I have another nickname and my friends often call me by that name, and it's Gosu. I'm a student of Hanoi University of Science and Technology and my major is software engineering. I was born in Vinh City, Nghe An Province. Coincidentally, I have the same birthday as Bill Gates. Hopefully, I can be as rich as 1% of him. :)
-					</p>
-
-					<p>Because of my major, so I want to be a developer. I want to sit in front of my laptop and get creative as I like, even though sometimes I have to do something by other people's ideas. One of the reasons I chose this career because when I was a kid I loved playing games and I could sit for hours without feeling bored or tired. I used to be an intern in several companies and gained some experience for myself and I think it will help me in my job.</p>
-				</article>
-			</div>
-		</div>
-	</div>
-	<div class="container pt-3 pb-5">
-		<div class="row">
-			<div class="col-md-8 col-lg-8 m-auto text-center welcome">
-				<img src="images/welcome.gif" alt="">
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 m-auto col-lg-8 line text-uppercase pt-5 pb-5"><span>personal information</span></div>
-			<div class="col-md-8 m-auto">
-				<div class="row info">
-					<div class="col-lg-4 col-md-12 m-auto">
-						<img src="images/avatar.jpg" alt="">
+				<div class="row line">
+					<div class="col-md-3 col-3">
+						<span class="title">D.O.B</span>
 					</div>
-					<div class="col-lg-8 col-md-12">
-						<ul type="none">
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">Name:</div>
-								<div class="col-md-9 col-xs-8 col-8">Hồ Hồng Sơn</div>
-							</li>
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">D.O.B:</div>
-								<div class="col-md-9 col-xs-8 col-8">28/10/1998</div>
-							</li>
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">Gender:</div>
-								<div class="col-md-9 col-xs-8 col-8">Male</div>
-							</li>
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">Address:</div>
-								<div class="col-md-9 col-xs-8 col-8">640 Lang Street, Lang Ha Ward, Dong Da District, Ha Noi City</div>
-							</li>
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">Home town:</div>
-								<div class="col-md-9 col-xs-8 col-8">Mai Loc Hamlet, Hung Dong Village, Vinh City, Nghe An Province</div>
-							</li>
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">Height:</div>
-								<div class="col-md-9 col-xs-8 col-8">172cm</div>
-							</li>
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">Weight:</div>
-								<div class="col-md-9 col-xs-8 col-8">52kg</div>
-							</li>
-							<li class="row">
-								<div class="col-md-3 col-xs-4 col-4">Email:</div>
-								<div class="col-md-9 col-xs-8 col-8">sonhongbk98@gmail.com</div>
-							</li>
+					<div class="col-md-9 col-9">
+						<span>28/10/1998</span>
+					</div>
+				</div>
+				<div class="row line">
+					<div class="col-md-3 col-3">
+						<span class="title">Gender</span>
+					</div>
+					<div class="col-md-9 col-9">
+						<span>Male</span>
+					</div>
+				</div>
+				<div class="row line">
+					<div class="col-md-3 col-3">
+						<span class="title">Address</span>
+					</div>
+					<div class="col-md-9 col-9">
+						<span>640 Lang Street, Lang Ha Ward, Dong Da District, Ha Noi City</span>
+					</div>
+				</div>
+				<div class="row line">
+					<div class="col-md-3 col-3">
+						<span class="title">Hometown</span>
+					</div>
+					<div class="col-md-9 col-9">
+						<span>Hung Dong Village, Vinh City, Nghe An Province</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-3">
+						<span class="title">Email</span>
+					</div>
+					<div class="col-md-9 col-9">
+						<span>sonhongbk98@gmail.com</span>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="w3-container w3-panel w3-large social_media text-center pt-3">
+			<i class="fa fa-2x fa-facebook-official w3-hover-opacity">
+				<a href="https://www.facebook.com/gosu28"></a>
+			</i>
+			<i class="fa fa-2x fa-instagram w3-hover-opacity">
+				<a href="https://www.instagram.com/gosu28__"></a>
+			</i>
+			<i class="fa fa-2x fa-twitter w3-hover-opacity">
+				<a href="https://twitter.com/Gosu_28"></a>
+			</i>
+		</div>
+	</nav>
+
+	<!-- Overlay effect when opening sidebar on small screens -->
+	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-main" style="margin-left:400px">
+		<!-- Header -->
+		<header id="portfolio" style="padding-top: 25px;">
+			<span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+				<i class="fa fa-bars"></i>
+			</span>
+			<div class="w3-container pb-5">
+				<h1><b>My Portfolio</b></h1>
+			</div>
+		</header>
+		<div class="w3-container w3-padding-large" style="margin-bottom:32px">
+			<h4><b>About Me</b></h4>
+			<br>
+			<div class="introduce" style="width: 65%">
+				<p>Hi guys, Welcome to my profile!</p>
+				<br>
+				<p>
+					My name is Hong Son, also my English name is Lake Pink Mountain :)). However, I have other nickname and my friends often call me by that name, and it's Gosu. I'm a student of Hanoi University of Science and Technology and my major is software engineering. I was born in Vinh City, Nghe An Province. Coincidentally, I have the same birthday as Bill Gates. Hopefully, I can be as rich as 1% of him.
+				</p>
+				<br>
+				<p>
+					Because of my major, so I want to be a developer. I want to sit in front of my laptop and get creative as I like, even though sometimes I have to do something by other people's ideas. One of the reasons I choose this career because when I was a kid I'm a big fan of games and I could sit for hours without feeling bored or tired. I used to be an intern in several companies and gained some experience for myself and I think it will help me in my job.
+				</p>
+			</div>
+			<hr>
+
+			<h4>Technical Skills</h4>
+			<br>
+			<!-- Progress bars / Skills -->
+			<p>HTML</p>
+			<div class="w3-grey mb-3">
+				<div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+			</div>
+			<p>CSS</p>
+			<div class="w3-grey mb-3">
+				<div class="w3-container w3-dark-grey w3-padding w3-center" style="width:75%">75%</div>
+			</div>
+			<p>Javascript</p>
+			<div class="w3-grey mb-3">
+				<div class="w3-container w3-dark-grey w3-padding w3-center" style="width:50%">50%</div>
+			</div>
+			<p>Python</p>
+			<div class="w3-grey mb-3">
+				<div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70%</div>
+			</div>
+			<p>PHP</p>
+			<div class="w3-grey mb-3">
+				<div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60%</div>
+			</div>
+			<hr>
+
+			<h4>My Custom Module</h4>
+			<br>
+			<!-- Pricing Tables -->
+			<div class="w3-row-padding" style="margin:0 -16px">
+				<div class="w3-third w3-margin-bottom">
+					<ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+						<li class="w3-black w3-xlarge w3-padding-32">Delivery API</li>
+						<li class="w3-padding-16"><a href="https://github.com/gosu28/delivery_api">Link Github</a></li>
+						<li class="w3-padding-16">Python - Odoo</li>
+					</ul>
+				</div>
+
+				<div class="w3-third w3-margin-bottom">
+					<ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+						<li class="w3-teal w3-xlarge w3-padding-32">Check Login System</li>
+						<li class="w3-padding-16"><a href="https://github.com/gosu28/check_login_system">Link Github</a>
+							<li class="w3-padding-16">Python - Odoo</li></li>
+						</ul>
+					</div>
+
+					<div class="w3-third">
+						<ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+							<li class="w3-black w3-xlarge w3-padding-32">Contract Employee</li>
+							<li class="w3-padding-16"><a href="https://github.com/gosu28/contract_employee.git">Link Github</a></li>
+							<li class="w3-padding-16">Python - Odoo</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-offset-md-2 col-lg-8 col-lg-offset-2 line text-uppercase"><span>skill</span></div>
-			<div class="col-md-8 m-auto">
-				<div class="row info">
-					<div class="content m-auto pb-5">
-						<p>I can write <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container pb-5">
-		<div class="row">
-			<div class="col-md-8 m-auto">
-				<div class="skills m-auto">
-					<h1 class="text-center pb-4 text-uppercase"><b>Detail</b></h1>
-					<div class="skill">
-						<div class="skill-name">HTML</div>
-						<div class="skill-bar">
-							<div class="skill-per" per="90"></div>
+
+			<!-- Footer -->
+			<footer class="w3-container w3-padding-32 w3-dark-grey">
+				<div class="w3-row-padding">
+					<div class="row">
+						<div class="col-md-5 offset-md-1">
+							<h3>Programming Language</h3>
+							<p>
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">HTML</span> 
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">CSS</span> 
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">Javascript</span>
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">PHP</span> 
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">Python</span>
+							</p>
+							<h3>Database</h3>
+							<p>
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">Mysql</span> 
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">SQL Server</span> 
+								<span class="w3-tag w3-grey w3-small w3-margin-bottom">PostgreSQL</span>
+							</p>
 						</div>
-						<div class="skill">
-							<div class="skill-name">CSS</div>
-							<div class="skill-bar">
-								<div class="skill-per" per="75"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill-name">JavaScript</div>
-							<div class="skill-bar">
-								<div class="skill-per" per="45"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill-name">PHP</div>
-							<div class="skill-bar">
-								<div class="skill-per" per="60"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill-name">Python</div>
-							<div class="skill-bar">
-								<div class="skill-per" per="50"></div>
-							</div>
-						</div>
-						<div class="skill">
-							<div class="skill-name">Flutter</div>
-							<div class="skill-bar">
-								<div class="skill-per" per="55"></div>
-							</div>
+						<div class="col-md-3 text-center m-auto">
+							<p class="intro">Powered by <a href="https://github.com/gosu28">Gosu28</a></p>
 						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
+
+
+
+			<!-- End page content -->
 		</div>
-	</div>
-	<!-- <div class="container">
-		<div class="row">
-			<div class="col-md-8 col-lg-8 m-auto line text-uppercase pt-5 pb-5"><span>Hobby</span></div>
-			
-		</div>
-	</div> -->
+
+		<script>
+	// Script to open and close sidebar
+	function w3_open() {
+		document.getElementById("mySidebar").style.display = "block";
+		document.getElementById("myOverlay").style.display = "block";
+	}
+
+	function w3_close() {
+		document.getElementById("mySidebar").style.display = "none";
+		document.getElementById("myOverlay").style.display = "none";
+	}
+</script>
 
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script id="rendered-js">
-	
-</script>
-<script src="js/effect_custom.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </html>
-
-
