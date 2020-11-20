@@ -127,7 +127,6 @@ section {
 	padding: 100px 0;
 }
 
-
 section .title {
 	position: relative;
 	text-align: center;
@@ -618,11 +617,40 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+
 	.home .home-content .text-2 {
 		font-size: 50px;
 	}
 
 	.home .home-content .text-3 {
 		font-size: 27px;
+	}
+}
+
+@media (max-width: 425px) {
+	section .title {
+		font-size: 30px;
+	}
+
+	.about .title::after, .education .title::after, .skills .title::after, .contact .title::after {
+		font-size: 18px;
+	}
+
+	.education .education-content .left .graduated-info .column-info {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.home .home-content .text-2 {
+		font-size: 50px;
+	}
+
+	.home .home-content .text-3 {
+		font-size: 27px;
+	}
+
+	.contact .contact-content .right .social-network a i {
+		font-size: 40px;
+		margin: 0 25px;
 	}
 }
