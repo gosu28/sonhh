@@ -39,8 +39,8 @@
 				<div class="text-2">Ho Hong Son</div>
 				<div class="text-3">And I'm a <span>Developer</span></div>
 			</div>
-			<div class="old">
-				<span>Now, I'm</span>&nbsp;<span id="old"></span>
+			<div class="age-info">
+				<p>Now, I'm&nbsp;<span id="age"></span></p>
 			</div>
 		</div>
 	</section>
@@ -149,34 +149,17 @@
 		<div class="max-width">
 			<h2 class="title">Contact me</h2>
 			<div class="contact-content">
-				<div class="column left">
-					<div class="text">
-						Get in touch
-					</div>
-					<div class="icons">
-						<div class="row">
-							<i class="fas fa-envelope"></i>
-							<div class="info">
-								<div class="head">Email</div>
-								<div class="sub-title">sonhongbk98@gmail.com</div>
-							</div>
-						</div>
-						<div class="row">
-							<i class="fas fa-map-marker-alt"></i>
-							<div class="info">
-								<div class="head">Address</div>
-								<div class="sub-title">Lang Ha Ward, Dong Da District, Ha Noi City</div>
-							</div>
-						</div>
-					</div>
+				<div class="text-center contact-info">
+					<i class="fas fa-map-marker-alt"></i>
+					<p class="sub-title">Lang Ha Ward, Dong Da District, Ha Noi City</p>
 				</div>
-				<div class="column right">
-					<h3>Follow me on...</h3>
-					<div class="social-network">
-						<a href=""><i class="fab fa-facebook"></i></a>
-						<a href=""><i class="fab fa-instagram"></i></a>
-						<a href=""><i class="fab fa-github"></i></a>
-					</div>
+				<div class="text-center contact-info">
+					<a href="https://facebook.com/gosu28" target="_blank"><i class="fab fa-facebook"></i></a>
+					<p class="sub-title">Sơn Hồng</p>
+				</div>
+				<div class="text-center contact-info">
+					<i class="fas fa-envelope"></i>
+					<p class="sub-title">sonhongbk98@gmail.com</p>
 				</div>
 			</div>
 		</div>
@@ -246,22 +229,22 @@
 
 
 			if ( (age.years > 0) && (age.months > 0) && (age.days > 0) )
-				ageString = age.years + yearString + " " + age.months + monthString + " and " + age.days + dayString + " old.";
+				ageString = age.years + yearString + " " + age.months + monthString + " and " + age.days + dayString + " old";
 			else if ( (age.years == 0) && (age.months == 0) && (age.days > 0) )
 				ageString = "Only " + age.days + dayString + " old!";
 			else if ( (age.years > 0) && (age.months == 0) && (age.days == 0) )
 				ageString = age.years + yearString + " old. Happy Birthday!!";
 			else if ( (age.years > 0) && (age.months > 0) && (age.days == 0) )
-				ageString = age.years + yearString + " and " + age.months + monthString + " old.";
+				ageString = age.years + yearString + " and " + age.months + monthString + " old";
 			else if ( (age.years == 0) && (age.months > 0) && (age.days > 0) )
-				ageString = age.months + monthString + " and " + age.days + dayString + " old.";
+				ageString = age.months + monthString + " and " + age.days + dayString + " old";
 			else if ( (age.years > 0) && (age.months == 0) && (age.days > 0) )
-				ageString = age.years + yearString + " and " + age.days + dayString + " old.";
+				ageString = age.years + yearString + " and " + age.days + dayString + " old";
 			else if ( (age.years == 0) && (age.months > 0) && (age.days == 0) )
 				ageString = age.months + monthString + " old.";
 			else ageString = "Oops! Could not calculate age!";
 
-			document.getElementById('old').innerHTML = ageString
+			document.getElementById('age').innerHTML = ageString
 		}
 		getAge('10/28/1998');
 
