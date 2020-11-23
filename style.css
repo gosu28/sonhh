@@ -446,13 +446,13 @@ section .title::after {
 }
 
 .contact .contact-content {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+	display: table;
+	width: 100%;
+	table-layout: fixed;
 }
 .contact .contact-content .contact-info {
-    display: table-cell;
-    text-align: center;
+	display: table-cell;
+	text-align: center;
 }
 
 .contact .contact-content .contact-info i {
@@ -623,6 +623,16 @@ footer span a:hover {
 		font-size: 27px;
 		font-weight: 700;
 	}
+
+	.contact .contact-content {
+		display: flex;
+		width: 100%;
+	}
+
+	.contact .contact-content .contact-info {
+		padding: 10px;
+		text-align: center;
+	}
 }
 
 @media (max-width: 425px) {
@@ -647,13 +657,9 @@ footer span a:hover {
 		font-size: 27px;
 	}
 
-	.home .old span {
+	.home .age-info p {
 		font-size: 27px;
 		font-weight: 700;
 	}
 
-	.contact .contact-content .right .social-network a i {
-		font-size: 40px;
-		margin: 0 25px;
-	}
 }
