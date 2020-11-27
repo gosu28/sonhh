@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	text-decoration: none;
+	text-decoration: none!important;
 }
 
 .max-width {
@@ -176,7 +176,7 @@
 }
 
 .scroll-up-btn.show {
-	bottom: 30px;
+	bottom: 45px;
 	opacity: 1;
 	pointer-events: auto;
 }
@@ -270,48 +270,39 @@ section .title::after {
 	padding-bottom: 5px;
 }
 
-.home .home-content .name-animate {
+.home .home-content .text-2 {
+	position: relative;
+}
+
+.home .home-content .text-2>span {
 	padding: 0 10px; 
 	font-size: 75px;
 	font-weight: 500;
 	margin-left: -3px;
-	position: relative;
-	z-index: 1;
-}
-
-.home .home-content .name-animate:before {
-	content: '';
-	width: 0%;
-	height: 90px;
-	background: #262626;
 	position: absolute;
-	top: 0;
-	left: 0;
-	animation: name-animate 5s forwards;
-	border-right: 5px solid #000;
-	animation-delay: 5s;
+	background: linear-gradient(#262626, #eaeaea, #262626);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
-@keyframes name-animate {
-	0% {
-		width: 100%;
-		z-index: 1;
-	}
-	50% {
-		width: 0%;
-		z-index: 1;
-	}
-	51% {
-		width: 0%;
-		z-index: -1;
-	}
-	100% {
-		width: 100%;
-		z-index: -1;
-	}
+.home .home-content .text-2>span:nth-child(1){
+	z-index: 2;
+}
+
+.home .home-content .text-2>span:nth-child(2){
+	z-index: 1;
+	text-shadow: 1px 1px 0 #262626,
+				 2px 2px 0 #262626,
+				 3px 3px 0 #262626,
+				 4px 4px 0 #262626,
+				 5px 5px 0 #262626,
+				 6px 20px 20px rgba(0,0,0,1),
+				 -1px -1px 0 #fff;
 }
 
 .home .home-content .text-3 {
+	position: relative;
+	top: 85px;
 	padding-top: 5px;
 	font-size: 40px;
 	margin: 5px 0;
@@ -365,6 +356,8 @@ section .title::after {
 }
 
 .home .age-info {
+	position: relative;
+	top: 85px;
 	padding-top: 25px;
 }
 
@@ -873,17 +866,39 @@ footer span a:hover {
 		margin-bottom: 15px;
 	}
 
+	.home .home-content .text-1 {
+		padding-bottom: 10px;
+	}
+
 	.home .home-content .text-2 {
 		font-size: 50px;
 	}
 
+	.home .home-content .text-2>span:nth-child(1){
+		font-size: 45px;
+	}
+
+	.home .home-content .text-2>span:nth-child(2){
+		font-size: 45px;
+	}
+
 	.home .home-content .text-3 {
 		font-size: 27px;
+		top: 60px;
+	}
+
+	.home .age-info {
+		top: 60px;
+		padding-top: 15px;
 	}
 
 	.home .age-info p {
-		font-size: 27px;
+		font-size: 20px;
 		font-weight: 700;
+	}
+
+	.about .about-content .right .myCV {
+		text-align: center;
 	}
 
 }

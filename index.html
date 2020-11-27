@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" type="image/jpg" href="./images/icon.jpg">
 </head>
 <body>
-	<div class="preloader">
+	<!-- <div class="preloader">
 		<div class="loader">
 			<span style="--i:1;"></span>
 			<span style="--i:2;"></span>
@@ -34,7 +34,7 @@
 			<span style="--i:19;"></span>
 			<span style="--i:20;"></span>
 		</div>
-	</div>
+	</div> -->
 	<div id="body-content">
 		<div class="scroll-up-btn">
 			<i class="fas fa-angle-up"></i>
@@ -42,7 +42,7 @@
 		<nav class="navbar">
 			<div class="max-width">
 				<div class="logo">
-					<a href="#">gosu<span>28</span></a>
+					<a href="https://github.com/gosu28">gosu<span>28</span></a>
 				</div>
 				<ul class="menu">
 					<li><a href="#home">Home</a></li>
@@ -61,8 +61,13 @@
 			<div class="max-width">
 				<div class="home-content">
 					<div class="text-1">Hello, My name is</div>
-					<div class="text-2"><span class="name-animate" data-text="Ho Hong Son">Ho Hong Son</span></div>
-					<div class="text-3">And I'm a <span class="animate" data-text="Developer.">Developer.</span></div>
+					<div class="text-2">
+						<span class="name-animate" >Ho Hong Son</span>
+						<span class="name-animate" >Ho Hong Son</span>
+					</div>
+					<div class="text-3">
+						<span>And I'm a</span>&nbsp;<span class="animate" data-text="Developer.">Developer.</span>
+					</div>
 				</div>
 				<div class="age-info">
 					<p>Now, I'm&nbsp;<span id="age"></span></p>
@@ -84,7 +89,11 @@
 						<p id="intro-body">
 							My name is Hong Son, my friends often call me "Gosu". I graduated in software engineering from Hanoi University of Science and Technology. One of the primary reasons I pursue this career is because I have a huge passion for software and computer science in general. I still remember when I was a kid I used to sit for hours tinkering around with my computer or playing games without feeling bored or tired. I had some internships at several big Tech companies and these opportunities gave me a lot of valuable knowledge as well as real work experience and I believe it will help me tremendously in my first job.
 						</p>
-						<a href="https://www.topcv.vn/xem-cv/71935f490ff92c1ca204c626d584abd7" target="_blank">Go to My CV</a>
+						<div class="myCV">
+							<a href="https://www.topcv.vn/xem-cv/71935f490ff92c1ca204c626d584abd7" target="_blank">
+								Go to My CV
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -198,7 +207,10 @@
 		</section>
 		<!-- Footer Section Start -->
 		<footer>
-			<span>Created by <a href="#">gosu28</a> <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+			<span>
+				Created by&nbsp;<a href="https://github.com/gosu28">gosu28</a>
+				&nbsp;<span class="far fa-copyright"></span>&nbsp;2020 All rights reserved.
+			</span>
 		</footer>
 	</div>
 	<script src="script.js" type="text/javascript"></script>
@@ -211,7 +223,7 @@
 			},5000);
 		});
 	</script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		$(window).on("load",function()
 		{
 			effect_text = document.querySelector("#intro-body");
@@ -232,7 +244,7 @@
 				}
 			}
 		});
-	</script>
+	</script> -->
 	<script type="text/javascript">
 		function getAge(dateString) 
 		{
