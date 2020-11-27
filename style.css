@@ -847,12 +847,17 @@ footer span a:hover {
 	}
 
 	.contact .contact-content .contact-info {
+		margin: 0 auto;
 		padding: 10px;
 		text-align: center;
 	}
 }
 
 @media (max-width: 425px) {
+	section {
+		padding: 75px 0;
+	}
+	
 	section .title {
 		font-size: 30px;
 	}
@@ -893,12 +898,195 @@ footer span a:hover {
 	}
 
 	.home .age-info p {
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: 700;
 	}
 
 	.about .about-content .right .myCV {
 		text-align: center;
+	}
+
+	.contact .contact-content .contact-info {
+		margin: 0 auto;
+	}
+
+}
+
+@media (max-width: 375px) {
+	.home .home-content .text-2>span:nth-child(1){
+		font-size: 40px;
+	}
+
+	.home .home-content .text-2>span:nth-child(2){
+		font-size: 40px;
+	}
+
+	.home .age-info p {
+		font-size: 16px;
+	}
+
+	.about .about-content .left img {
+		width: 275px;
+		height: 275px;
+	}
+
+	section {
+		padding: 50px 0;
+	}
+
+	section .title {
+		font-size: 30px;
+	}
+
+	section .title::before {
+		bottom: -4px;
+		width: 175px;
+	}
+
+	.about .title::after, .education .title::after, .skills .title::after, .contact .title::after {
+		font-size: 15px;
+	}
+
+	.contact .contact-content .contact-info i {
+		font-size: 30px;
+	}
+
+	.contact .contact-content .contact-info .sub-title {
+		font-size: 14px;
+	}
+
+	footer span {
+		font-size: 16px;
+	}
+
+	.education .education-content .left .graduated-info .column-info p {
+		font-size: 15px;
+	}
+
+	.skills .skills-content .left .text {
+		font-size: 50px;
+	}
+
+	.about .about-content .right p {
+		font-size: 15px;
+	}
+
+	.about .about-content .right a {
+		font-size: 15px;
+	}
+
+	.education .education-content .right .info h3 {
+		font-size: 18px;
+	}
+
+	.education .education-content .right .info h4 {
+		font-size: 14px;
+	}
+
+	.education .education-content .right .info h6 {
+		font-size: 11px;
+	}
+
+	.skills .skills-content .right .info span {
+		font-size: 14px;
+	}
+
+	.contact .contact-content .contact-info {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 320px) {
+	.home .home-content .text-2>span:nth-child(1){
+		font-size: 32px;
+	}
+
+	.home .home-content .text-2>span:nth-child(2){
+		font-size: 32px;
+	}
+
+	.home .age-info {
+		top: 40px;
+		padding-top: 5px;
+	}
+
+	.home .age-info p {
+		font-size: 13px;
+	}
+
+	.home .home-content .text-3 {
+		font-size: 22px;
+		top: 40px;
+	}
+
+	.about .about-content .left img {
+		width: 250px;
+		height: 250px;
+	}
+
+	section {
+		padding: 50px 0;
+	}
+
+	section .title {
+		font-size: 26px;
+	}
+
+	section .title::before {
+		bottom: -4px;
+		width: 175px;
+	}
+
+	.about .title::after, .education .title::after, .skills .title::after, .contact .title::after {
+		font-size: 12px;
+	}
+
+	.contact .contact-content .contact-info i {
+		font-size: 25px;
+	}
+
+	.contact .contact-content .contact-info .sub-title {
+		font-size: 11px;
+	}
+
+	footer span {
+		font-size: 14px;
+	}
+
+	.education .education-content .left .graduated-info .column-info p {
+		font-size: 15px;
+	}
+
+	.skills .skills-content .left .text {
+		font-size: 50px;
+	}
+
+	.about .about-content .right p {
+		font-size: 15px;
+	}
+
+	.about .about-content .right a {
+		font-size: 15px;
+	}
+
+	.education .education-content .right .info h3 {
+		font-size: 13px;
+	}
+
+	.education .education-content .right .info h4 {
+		font-size: 12px;
+	}
+
+	.education .education-content .right .info h6 {
+		font-size: 11px;
+	}
+
+	.skills .skills-content .right .info span {
+		font-size: 14px;
+	}
+
+	.contact .contact-content .contact-info {
+		margin: 0 auto;
 	}
 
 }
