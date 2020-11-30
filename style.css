@@ -18,11 +18,11 @@
 .preloader {
 	position: fixed;
 	left: 0;
-    top: 0;
+	top: 0;
 	z-index: 99999;
 	width: 100%;
-    height: 100%;
-    overflow: hidden;
+	height: 100%;
+	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -67,11 +67,11 @@
 	border-radius: 50%;
 	background: #00ff0a;
 	box-shadow: 0 0 10px #00ff0a,
-				0 0 20px #00ff0a,
-				0 0 40px #00ff0a,
-				0 0 60px #00ff0a,
-				0 0 80px #00ff0a,
-				0 0 100px #00ff0a;
+	0 0 20px #00ff0a,
+	0 0 40px #00ff0a,
+	0 0 60px #00ff0a,
+	0 0 80px #00ff0a,
+	0 0 100px #00ff0a;
 	animation: animate 1s linear infinite;
 	animation-delay: calc(0.05s * var(--i));
 }
@@ -292,12 +292,12 @@ section .title::after {
 .home .home-content .text-2>span:nth-child(2){
 	z-index: 1;
 	text-shadow: 1px 1px 0 #262626,
-				 2px 2px 0 #262626,
-				 3px 3px 0 #262626,
-				 4px 4px 0 #262626,
-				 5px 5px 0 #262626,
-				 6px 20px 20px rgba(0,0,0,1),
-				 -1px -1px 0 #fff;
+	2px 2px 0 #262626,
+	3px 3px 0 #262626,
+	4px 4px 0 #262626,
+	5px 5px 0 #262626,
+	6px 20px 20px rgba(0,0,0,1),
+	-1px -1px 0 #fff;
 }
 
 .home .home-content .text-3 {
@@ -367,6 +367,101 @@ section .title::after {
 	background: crimson;
 	padding: 0 5px;
 }
+
+/*clock section style*/
+
+section.clock-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f2f2f2;
+}
+
+.clock {
+	width: 350px;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/clock.png);
+	background-size: cover;
+	border: 4px solid #f2f2f2;
+	border-radius: 50%;
+	box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+	inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+	0 15px 15px rgba(0, 0, 0, 0.3),
+	inset 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.clock:before
+{
+	content: '';
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #000;
+	border-radius: 50%;
+	z-index: 999999;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+	position: absolute;
+}
+
+.clock .hour, .hr {
+	width: 160px;
+	height: 160px;
+}
+
+.clock .min, .mn {
+	width: 190px;
+	height: 190px;
+}
+
+.clock .sec, .sc {
+	width: 230px;
+	height: 230px;
+}
+
+.hr, .mn, .sc {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.hr:before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 80px;
+	background: red;
+	z-index: 9;
+	border-radius: 6px 6px 0 0;
+}
+
+.mn:before {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 90px;
+	background: yellow;
+	z-index: 99999999;
+	border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 160px;
+	background: blue;
+	z-index: 999999999;
+	border-radius: 6px 6px 0 0;
+}
+
 
 /*about section style*/
 
@@ -591,11 +686,11 @@ section .title::after {
 		color: #fff;
 		filter: blur(2px);
 		text-shadow: 0 0 10px #00b3ff,
-					 0 0 20px #00b3ff,
-					 0 0 40px #00b3ff,
-					 0 0 80px #00b3ff,
-					 0 0 160px #00b3ff,
-					 0 0 320px #00b3ff;
+		0 0 20px #00b3ff,
+		0 0 40px #00b3ff,
+		0 0 80px #00b3ff,
+		0 0 160px #00b3ff,
+		0 0 320px #00b3ff;
 	}
 	5%, 95% {
 		color: #111;
@@ -684,6 +779,129 @@ section .title::after {
 
 .contact .contact-content .contact-info .sub-title {
 	font-family: "Ubuntu", san-serif;
+}
+
+/*car animation style*/
+
+section.no-padding {
+	padding: 0;
+}
+
+.hero {
+	height: 100vh;
+	width: 100%;
+	background-image: url(images/sky.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.highway {
+	height: 200px;
+	width: 2000%;
+	display: block;
+	background-image: url(images/road.jpg);
+	background-repeat: repeat-x;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	animation: highway 5s linear infinite;
+}
+
+@keyframes highway 
+{
+	100%
+	{
+		transform: translateX(-3400px);
+	}
+}
+
+.city {
+	height: 250px;
+	width: 2000%;
+	background-image: url(images/city.png);
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: city 40s linear infinite;
+}
+
+@keyframes city 
+{
+	100%
+	{
+		transform: translateX(-3400px);
+	}
+}
+
+.car
+{
+	width: 400px;
+	left: 50%;
+	bottom: 100px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+
+.car img {
+	width: 100%;
+	animation: car 1s linear infinite;
+}
+
+@keyframes car 
+{
+	100%
+	{
+		transform: translateY(-1px);
+	}
+	50%
+	{
+		transform: translateY(1px);
+	}
+	0%
+	{
+		transform: translateY(-1px);
+	}
+}
+
+.wheel {
+	left: 50%;
+	bottom: 178px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+
+.wheel img {
+	width: 72px;
+	height: 72px;
+	animation: wheel 1s linear infinite;
+}
+
+.back-wheel {
+	left: -165px;
+	position: absolute;
+}
+
+.front-wheel {
+	left: 80px;
+	position: absolute;
+}
+
+@keyframes wheel 
+{
+	100%
+	{
+		transform: rotate(360deg);
+	}	
 }
 
 /*footer section style*/
@@ -910,9 +1128,41 @@ footer span a:hover {
 		margin: 0 auto;
 	}
 
+	.car
+	{
+		width: 200px;
+		left: 50%;
+		bottom: 100px;
+		transform: translateX(-50%);
+		position: absolute;
+		z-index: 2;
+	}
+
+	.wheel {
+		bottom: 142px;
+	}
+
+	.wheel img {
+		width: 33px;
+		height: 33px;
+	}
+
+	.back-wheel {
+		left: -81px;
+	}
+
+	.front-wheel {
+		left: 41px;
+	}
+
 }
 
 @media (max-width: 375px) {
+	
+	.max-width {
+		padding: 0 25px;
+	}
+
 	.home .home-content .text-2>span:nth-child(1){
 		font-size: 40px;
 	}
@@ -997,6 +1247,10 @@ footer span a:hover {
 }
 
 @media (max-width: 320px) {
+	.max-width {
+		padding: 0 25px;
+	}
+
 	.home .home-content .text-2>span:nth-child(1){
 		font-size: 32px;
 	}
@@ -1011,7 +1265,7 @@ footer span a:hover {
 	}
 
 	.home .age-info p {
-		font-size: 13px;
+		font-size: 10px;
 	}
 
 	.home .home-content .text-3 {
@@ -1087,6 +1341,38 @@ footer span a:hover {
 
 	.contact .contact-content .contact-info {
 		margin: 0 auto;
+	}
+
+	.clock {
+		width: 250px;
+		height: 250px;
+	}
+
+	.clock:before
+	{
+		width: 10px;
+		height: 10px;
+	}
+
+	.hr:before {
+		position: relative;
+		top: 35px;
+		left: 0;
+		height: 45px;
+	}
+
+	.mn:before {
+		position: relative;
+		top: 35px;
+		left: 0;
+		height: 55px;
+	}
+
+	.sc:before {
+		position: relative;
+		top: 45px;
+		left: 0;
+		height: 99px;
 	}
 
 }

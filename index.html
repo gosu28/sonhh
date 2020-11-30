@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" type="image/jpg" href="./images/icon.jpg">
 </head>
 <body>
-	<div class="preloader">
+	<!-- <div class="preloader">
 		<div class="loader">
 			<span style="--i:1;"></span>
 			<span style="--i:2;"></span>
@@ -34,7 +34,7 @@
 			<span style="--i:19;"></span>
 			<span style="--i:20;"></span>
 		</div>
-	</div>
+	</div> -->
 	<div id="body-content">
 		<div class="scroll-up-btn">
 			<i class="fas fa-angle-up"></i>
@@ -71,6 +71,22 @@
 				</div>
 				<div class="age-info">
 					<p>Now, I'm&nbsp;<span id="age"></span></p>
+				</div>
+			</div>
+		</section>
+		<!-- Clock Section Start -->
+		<section class="clock-section">
+			<div class="max-width" id="clock">
+				<div class="clock">
+					<div class="hour">
+						<div class="hr" id="hr"></div>
+					</div>
+					<div class="min">
+						<div class="mn" id="mn"></div>
+					</div>
+					<div class="sec">
+						<div class="sc" id="sc"></div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -205,6 +221,20 @@
 				</div>
 			</div>
 		</section>
+		<!-- Car Animation Section -->
+		<section class="no-padding">
+			<div class="hero">
+				<div class="highway"></div>
+				<div class="city"></div>
+				<div class="car">
+					<img src="images/car.png" alt="">
+				</div>
+				<div class="wheel">
+					<img src="images/wheel.png" alt="" class="back-wheel">
+					<img src="images/wheel.png" alt="" class="front-wheel">
+				</div>
+			</div>
+		</section>
 		<!-- Footer Section Start -->
 		<footer>
 			<span>
@@ -223,28 +253,6 @@
 			},5000);
 		});
 	</script>
-	<!-- <script type="text/javascript">
-		$(window).on("load",function()
-		{
-			effect_text = document.querySelector("#intro-body");
-			window.addEventListener('scroll', scrollEffect);
-
-			function scrollEffect()
-			{
-				if (window.scrollY >= 350)
-				{
-					effect_text.style.opacity = '1';
-					effect_text.style.transform = 'translateX(0px)';
-					effect_text.style.transition = '1s ease-in-out';
-				} 
-				else 
-				{
-					effect_text.style.opacity = '0';
-					effect_text.style.transform = 'translateX(50%)';
-				}
-			}
-		});
-	</script> -->
 	<script type="text/javascript">
 		function getAge(dateString) 
 		{
@@ -328,6 +336,24 @@
 		}
 		getAge('10/28/1998');
 
+	</script>
+	<script type="text/javascript">
+		const deg = 6;
+		const hr = document.querySelector('#hr');
+		const mn = document.querySelector('#mn');
+		const sc = document.querySelector('#sc');
+
+		setInterval(() => {
+			let day = new Date();
+			let hh = day.getHours() * 30;
+			let mm = day.getMinutes() * deg;
+			let ss = day.getSeconds() * deg;
+
+
+			hr.style.transform = `rotateZ(${(hh)+(mm/12)}deg)`;
+			mn.style.transform = `rotateZ(${mm}deg)`;
+			sc.style.transform = `rotateZ(${ss}deg)`;
+		});
 	</script>
 </body>
 </html>

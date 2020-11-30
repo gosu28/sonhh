@@ -23,12 +23,14 @@ $(document).ready(function()
 	});
 
 	// slide-up script
-	$('.scroll-up-btn').click(function(){
+	$('.scroll-up-btn').click(function()
+	{
 		$('html').animate({scrollTop: 0});
 	});
 
 	// toggle menu/navbar
-	$('.menu-btn').click(function(){
+	$('.menu-btn').click(function()
+	{
 		$('.navbar .menu').toggleClass("active");
 		$('.menu-btn i').toggleClass("active");
 	});
